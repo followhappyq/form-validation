@@ -28,7 +28,7 @@ const validation = () => {
     errorMessage.textContent = text;
     return false;
   }
-  if (email.indexOf("@") == -1 || email.length < 5) {
+  if (validateEmail(email)) {
     text = "Please Enter Valid Email";
     errorMessage.textContent = text;
     return false;
@@ -36,6 +36,14 @@ const validation = () => {
   if (message.length < 10) {
     text = "Please Enter Valid Message";
     errorMessage.textContent = text;
+    return false;
+  }
+  return true;
+};
+
+const validateEmail = inputText => {
+  let mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (inputText.match(mailformat)) {
     return false;
   }
   return true;
