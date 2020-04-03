@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contact-us-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 350px;
+  width: 100%;
+  background: lightblue;
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.contact-us-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #332902;
+}
+
+.contact-us-form .input-field {
+  margin-bottom: 10px;
+}
+
+.contact-us-form .input-field input[type="text"],
+.contact-us-form textarea {
+  width: 100%;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.contact-us-form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.contact-us-form .btn input[type="submit"] {
+  border: 0;
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  letter-spacing: 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact-us-form .error-message {
+  margin-bottom: 20px;
+  padding: 0px;
+  background: #fe8b8e;
+  text-align: center;
+  font-size: 14px;
+  transition: 0.5s ease;
+}

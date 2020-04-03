@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <div class="contact-us-form">
+      <h2>Contact us</h2>
+      <div class="error-message"></div>
+      <form id="my-form" onsubmit="return validation()">
+        <div class="input-field">
+          <input type="text" placeholder="Name" id="contact-us-form-name" />
+        </div>
+        <div class="input-field">
+          <input
+            type="text"
+            placeholder="Subject"
+            id="contact-us-form-subject"
+          />
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="Phone" id="contact-us-form-phone" />
+        </div>
+        <div class="input-field">
+          <input type="text" placeholder="E-mail" id="contact-us-form-email" />
+        </div>
+        <div class="input-field">
+          <textarea
+            placeholder="Message"
+            id="contact-us-form-message"
+          ></textarea>
+        </div>
+        <div class="btn">
+          <input type="submit" value="Send" />
+        </div>
+      </form>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
